@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job 02</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" crossorigin="anonymous"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" defer></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="img/arc1.png" class="img" id="1">
+    <img src="img/arc2.png" class="img" id="2">
+    <img src="img/arc3.png" class="img" id="3">
+    <img src="img/arc4.png" class="img" id="4">
+    <img src="img/arc5.png" class="img" id="5">
+    <img src="img/arc6.png" class="img" id="6">
+
+    <button id="button" onclick="shuffleImages()">Mélanger</button>
+
+    <article id="gallery"></article>
+
+    <section id="containers">
+        <!-- Conteneurs où l'utilisateur peut placer les images -->
+        <article class="container" id="container1"></article>
+        <article class="container" id="container2"></article>
+        <article class="container" id="container3"></article>
+        <article class="container" id="container4"></article>
+        <article class="container" id="container5"></article>
+        <article class="container" id="container6"></article>
+    </section>
+
+    <p id="message"></p>
+</body>
+
+</html>

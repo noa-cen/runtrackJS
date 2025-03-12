@@ -1,0 +1,17 @@
+#containers {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    min-height: 100px;
+    max-width: 300px;
+}
+
+.container {
+    border: 1px solid black;
+    min-height: 100px;
+    width: 50px;
+}
+
+img {
+    max-height: 100px;
+}
