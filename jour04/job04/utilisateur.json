@@ -1,0 +1,20 @@
+[
+    {
+        "id": "1",
+        "prenom": "Noa",
+        "nom": "Cengarle",
+        "email": "noa.cengarle@laplateforme.io"
+    },
+    {
+        "id": "2",
+        "prenom": "Armelle",
+        "nom": "Pouzioux",
+        "email": "armelle.pouzioux@laplateforme.io"
+    },
+    {
+        "id": "3",
+        "prenom": "Vladimir",
+        "nom": "Gorbatchev",
+        "email": "vladimir.gorbatchev@laplateforme.io"
+    }
+]
