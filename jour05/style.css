@@ -1,0 +1,130 @@
+/* Color palette */
+:root {
+    --primary: #5A4C4A;
+    --primary--50: rgba(90, 76, 74, 0.5);
+    --secondary: #7F6F6C;
+    --tertiary: #F2EDE2;
+}
+
+/* General */
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style-type: none;
+    border: none;
+    box-sizing: border-box;
+    /* border: red;
+    border-style: solid; */
+    font-family: "Roboto", serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: var(--tertiary);
+    color: var(--primary);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 24px;
+}
+
+h2 {
+    font-size: 20pt;
+    text-align: center;
+}
+
+/* Button */
+.button {
+    background-color: var(--tertiary);
+    color: var(--primary);
+    border: 1px solid var(--secondary);
+    padding: 8px 16px;
+    border-radius: 15px;
+    align-self: center;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 24px 0 16px;
+    font-size: 12pt;
+}
+
+.button:hover {
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    color: var(--tertiary);
+}
+
+/* Form */
+.form {
+    background-color: var(--primary--50);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    border-radius: 15px;
+    border: 1px solid var(--secondary);
+    width: 100%;
+
+    h2 {
+        font-size: 20pt;
+        margin-bottom: 16px;
+    }
+
+    .formBody {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .formItem {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-bottom: 8px;
+        width: 100%;
+
+        input {
+            width: 100%;
+            margin-top: 4px;
+            height: 30px;
+            border-radius: 10px;
+            padding: 4px;
+            color: var(--primary);
+        }
+    }
+
+    .formLink {
+        color: var(--primary);
+        margin-top: 24px;
+        text-align: center;
+
+        i {
+            margin-left: 8px;
+        }
+    }
+}
+
+/* Messages */
+#message {
+    max-width: 250px;
+    border: 2px solid;
+    border-radius: 10px;
+    text-align: center;
+    padding: 8px 24px;
+    margin-bottom: 16px;
+    color: #540804;
+    background-color: #c75146;
+    border-color: #540804;
+}
