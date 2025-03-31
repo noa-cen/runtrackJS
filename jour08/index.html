@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tailwind</title>
+</head>
+<body class="font-sans flex flex-col min-h-screen">
+    <header>
+        <nav>
+            <ul class="flex justify-center bg-sky-500">
+                <li class="m-4"><a href="index.html">Accueil</a></li>
+                <li class="m-4"><a href="index.html">Inscription</a></li>
+                <li class="m-4"><a href="index.html">Connexion</a></li>
+                <li class="m-4"><a href="index.html">Rechercher</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="p-8 flex-grow">
+        <section>
+            <form class="flex flex-col justify-center items-center border-2 border-black rounded-xl gap-4">
+                <article>
+                    <label for="monsieur">Monsieur</label>
+                    <input type="radio" name="civilite" id="monsieur">
+                    <label for="madame">Madame</label>
+                    <input type="radio" name="civilite" id="madame">
+                    <label for="mx">Mx</label>
+                    <input type="radio" name="civilite" id="mx">
+                </article>
+                
+                <article>
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" class="w-full aria-disabled:cursor-not-allowed outline-none focus:outline-none text-stone-800 dark:text-white placeholder:text-stone-600/60 ring-transparent border border-stone-200 transition-all ease-in disabled:opacity-50 disabled:pointer-events-none select-none text-sm py-2 pr-8 pl-2.5 ring shadow-sm bg-white rounded-lg duration-100 hover:border-stone-300 hover:ring-none focus:border-stone-400 focus:ring-none peer">
+                </article>
+                <article>
+                    <label for="prenom">Prénom</label>
+                    <input type="text" id="prenom" class="border border-amber rounded-md outline-offset-4 outline-sky-500 focus:outline-2">
+                </article>
+                
+                <article>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="border border-amber rounded-md outline-offset-4 outline-sky-500 focus:outline-2">
+                </article>
+                
+                <article>
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" class="border border-amber rounded-md outline-offset-4 outline-sky-500 focus:outline-2">
+                </article>
+                
+                <article>
+                    <input type="checkbox" id="it" value="informatique" class="accent-amber-500">
+                    <label for="it">Informatique</label>
+                </article>
+                <article>
+                    <input type="checkbox" id="hiking" value="randonnee">
+                    <label for="hiking">Randonnée</label>
+                </article>
+                    
+                <article>
+                    <input type="checkbox" id="diving" value="plongee">
+                    <label for="diving">Plongée</label>
+                </article>
+                
+
+                <input type="submit" value="Envoyer">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <ul class="flex flex-col bg-amber-500 pl-4">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html">Inscription</a></li>
+            <li><a href="index.html">Connexion</a></li>
+            <li><a href="index.html">Rechercher</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
